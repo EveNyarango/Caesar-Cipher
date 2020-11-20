@@ -20,7 +20,8 @@ public class Decode {
     public static  String decode(Decode decode){
 if(decode.mShift >26) {
 decode.mShift = decode.mShift % 26;
-}else if(decode.mShift < 0){
+}
+else if(decode.mShift < 0){
     decode.mShift = (decode.mShift % 26) + 26;
 
 }

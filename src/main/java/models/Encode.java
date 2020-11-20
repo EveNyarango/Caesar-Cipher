@@ -19,4 +19,13 @@ public class Encode {
     public int getmShift() {
         return mShift;
     }
+    public static  String encode( Encode encode) {
+        if (encode.mShift > 26) {
+            encode.mShift = encode.mShift % 26;
+        }
+        else if(encode.mShift < 0) {
+    encode.mShift = (encode.mShift % 26) + 26;
+        }
+
+    }
 }
