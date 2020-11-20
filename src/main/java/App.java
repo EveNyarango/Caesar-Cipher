@@ -13,7 +13,7 @@ while (runCaesar) {
 
 System.out.println("Hi, this Caesar Cipher");
 System.out.println("=======================");
-System.out.println("Enter encode to encrypt or decode to decrypt or exit to leave the group");
+System.out.println("Enter encode to encrypt or decode to decrypt or exit to leave the App");
 String choice = myScanner.nextLine();
 
 if (choice.equals("encode")){
