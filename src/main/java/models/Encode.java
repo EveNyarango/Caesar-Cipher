@@ -1,4 +1,4 @@
 package models;
 
-public class encode {
+public class Encode {
 }
