@@ -6,7 +6,17 @@ import static org.junit.Assert.*;
 
 public class EncodeTest {
     @Test
-    public void EncodeTest() {
+    public void runEncode_ifInputIsString() {
+Encode testEncode = new Encode("abc",3);
+assertEquals("abc", testEncode.getmInputString());
+    }
+    @Test
+    public void  runDecoding_ifKeyIsInt() {
+        Encode testEncode = new Encode("abc", 3);
+        assertEquals(3, testEncode.getmShift());
+    }
+    @Test
+    public void encode(){
 
     }
 }
