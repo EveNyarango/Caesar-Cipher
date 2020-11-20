@@ -1,6 +1,7 @@
 package models;
 
 public class Decode {
+
     private String mInputString;
     private int mShift;
 
