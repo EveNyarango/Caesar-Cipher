@@ -1,7 +1,7 @@
 import com.sun.tools.javac.comp.Enter;
 import models.Decode;
 import models.Encode;
-
+import java.io.Console;
 import java.util.Scanner;
 
 public class App {
@@ -11,7 +11,7 @@ boolean runCaesar = true;
 
 while (runCaesar) {
 
-System.out.println("Hi, this Caesar Cipher");
+System.out.println("Hi, this is Caesar Cipher");
 System.out.println("=======================");
 System.out.println("Enter encode to encrypt or decode to decrypt or exit to leave the App");
 String choice = myScanner.nextLine();

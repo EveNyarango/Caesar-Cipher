@@ -11,10 +11,12 @@ public class Decode {
     }
 
     public String getmInputString() {
+
         return mInputString;
     }
 
     public int getmShift() {
+
         return mShift;
     }
     public static  String decode(Decode decode){
