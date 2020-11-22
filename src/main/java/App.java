@@ -29,7 +29,6 @@ if (choice.equals("encode")){
     System.out.println("Encoded message:" + encoded);
     System.out.println("=========================");
     System.out.println("=========================");
-    System.out.println("=========================");
 }
 else if(choice.equals("decode")){
     System.out.println("To decode a message enter it below");
@@ -43,7 +42,6 @@ else if(choice.equals("decode")){
     String decoded = Decode.decode(caesar);
 
     System.out.println("Decoded message:" + decoded);
-    System.out.println("=========================");
     System.out.println("=========================");
     System.out.println("=========================");
 }
