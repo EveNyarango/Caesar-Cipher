@@ -33,7 +33,7 @@ public class Encode {
             char cc = encode.mInputString.charAt(i);
             if(Character.isLetter(cc)){
                 if(Character.isLowerCase(cc)){
-                    char c = (char)(cc-encode.mShift);
+                    char c = (char) (cc + encode.mShift);
                     if(c<'a'){
                         outputString += (char)(cc + (26-encode.mShift));
                     }
@@ -42,7 +42,7 @@ public class Encode {
                     }
                 }
                 else if(Character.isUpperCase(cc)){
-                    char c = (char)(cc-encode.mShift);
+                    char c = (char)(cc+encode.mShift);
                     if(c<'A'){
                         outputString += (char)(cc + (26-encode.mShift));
                     }

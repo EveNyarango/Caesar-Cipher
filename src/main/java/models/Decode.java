@@ -33,7 +33,7 @@ for (int i = 0; i < length; i++){
     char cc = decode.mInputString.charAt(i);
     if (Character.isLetter(cc)){
         if (Character.isLowerCase(cc)){
-            char c = (char)(cc + (26-decode.mShift));
+            char c = (char)(cc - decode.mShift);
             if (c>'z'){
                 outputString += (char)(cc + (26-decode.mShift));
             }
@@ -45,7 +45,7 @@ for (int i = 0; i < length; i++){
         }
 
        else if (Character.isUpperCase(cc)){
-            char c = (char)(cc + (26-decode.mShift));
+            char c = (char)(cc - decode.mShift);
             if (c>'Z'){
                 outputString += (char)(cc + (26-decode.mShift));
             }
